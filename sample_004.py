@@ -57,13 +57,13 @@ def analyze_order(system_prompt, user_prompt):
         max_tokens=128,
     )
 
-    responce_str = response["choices"][0]["message"]["content"]
+    response_str = response["choices"][0]["message"]["content"]
 
     # JSONオブジェクトに変換
     try:
-        json_data = json.loads(responce_str)
+        json_data = json.loads(response_str)
     except ValueError:
-        raise ValueError(f"Invalid json format: {responce_str}")
+        raise ValueError(f"Invalid json format: {response_str}")
 
     return json_data
 

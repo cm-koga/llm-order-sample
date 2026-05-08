@@ -50,7 +50,7 @@ if __name__ == "__main__":
         max_tokens=128,
     )
 
-    responce_str = response["choices"][0]["message"]["content"]
+    response_str = response["choices"][0]["message"]["content"]
 
     # 結果表示
-    print(responce_str)
+    print(response_str)
