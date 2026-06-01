@@ -13,12 +13,13 @@ system_prompt = """
 フォーマットは
 {
   "orders": [
-  {
-    "item_name": 品目,
-    "quantity": 数量,
-    "size": サイズ,
-  },
-]
+    {
+        "item_name": 品目,
+        "quantity": 数量,
+        "size": サイズ,
+    },
+  ]
+}
 
 ・item_nameからサイズ指定の単語は除去。例えば「牛丼大盛り」→ item_name: "牛丼", size: "大"。例えば「小カレー」→ item_name: "カレー", size: "小"
 ・size: "大","中","小"のいずれかで出力

@@ -10,11 +10,12 @@ JSONだけを出力してください。
 フォーマットは
 {
   "orders": [
-  {
-    "item_name": 品目,
-    "quantity": 数量,
-  },
-]
+    {
+        "item_name": 品目,
+        "quantity": 数量
+    },
+  ]
+}
 """
 
 user_prompt = """
