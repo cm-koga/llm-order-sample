@@ -15,7 +15,7 @@ JSONだけを出力してください。
   "orders": [
     {
         "item_name": 品目,
-        "quantity": 数量
+        "quantity": 数量,
     },
   ]
 }
